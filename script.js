@@ -24,8 +24,17 @@ listContainer.addEventListener("click", function (e) {
     } else if (e.target.tagName === "SPAN") {
         e.target.parentElement.remove();
         saveData ();
+        
     }
 }, false);
+
+inputBox.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+        e.preventDefault(); // cegah form submit/reload
+        addTask();
+    }
+});
+
 
 function saveData () {
     localStorage.setItem("data",listContainer.innerHTML);    
@@ -35,3 +44,4 @@ function showTask() {
     listContainer.innerHTML = localStorage.getItem("data");
 }
 showTask();
+
