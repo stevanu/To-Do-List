@@ -2,10 +2,7 @@ A simple and responsive To-Do List web application built with HTML, CSS, and Jav
 
 🚀 Features
 Add new tasks
-
 Mark tasks as completed
-
 Delete tasks
-
 Responsive layout (mobile & desktop)
 
